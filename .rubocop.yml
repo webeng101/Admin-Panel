@@ -1,0 +1,94 @@
+---
+
+inherit_mode:
+  merge:
+    - Include
+
+AllCops:
+  DisabledByDefault: true
+  TargetRubyVersion: 2.3
+
+  Exclude:
+    - spec/rails/**/*
+    - gemfiles/vendor/bundle/**/*
+    - vendor/bundle/**/*
+
+  Include:
+    - gemfiles/*.gemfile
+    - .simplecov
+
+  DisplayCopNames: true
+
+  StyleGuideCopsOnly: false
+
+Layout/EndAlignment:
+  Enabled: true
+
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: true
+
+Layout/AccessModifierIndentation:
+  Enabled: true
+
+Layout/CaseIndentation:
+  Enabled: true
+
+Layout/CommentIndentation:
+  Enabled: true
+
+Layout/ElseAlignment:
+  Enabled: true
+
+Layout/EmptyLines:
+  Enabled: true
+
+Layout/EndOfLine:
+  Enabled: true
+
+Layout/ExtraSpacing:
+  Enabled: true
+
+Style/Encoding:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: never
+
+Style/HashSyntax:
+  Enabled: true
+
+Layout/IndentationConsistency:
+  Enabled: true
+
+Layout/IndentationWidth:
+  Enabled: true
+
+Naming/PredicateName:
+  Enabled: true
+
+  NamePrefixBlacklist:
+    - is_
+    - have_
+
+  NameWhitelist:
+    - has_many
+    - has_many_actions
+
+Style/TrailingCommaInArguments:
+  Enabled: true
+
+Layout/TrailingBlankLines:
+  Enabled: true
+
+Layout/TrailingWhitespace:
+  Enabled: true
+
+Layout/SpaceAfterComma:
+  Enabled: true
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+Layout/SpaceInsideParens:
+  Enabled: true
